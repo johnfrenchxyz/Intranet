@@ -1,0 +1,125 @@
+/*
+    Main Template CSS
+    CAES Intranet 2016
+*/
+
+// Color Variables
+//----------------
+
+$red: #BA0C2F;
+$gray: #777;
+$light-gray: lighten($medium-gray, 10%);
+$medium-gray: #cacaca;
+$dark-gray: #3e3e3e;
+$green: #339966;
+$yellow: #ffa02f;
+$blue: #0083aa;
+
+// Element-Specific Color Variables
+//---------------------------------
+
+$side-nav-bg: lighten($light-gray, 7%);
+$footer-bg: $side-nav-bg;
+
+// Typography
+// ----------
+
+// Roboto ()
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+// font-family: 'Roboto', sans-serif;
+
+// Nunito (Avenir Alternative)
+// @import url(https://fonts.googleapis.com/css?family=Nunito:300,500);
+// font-family: 'Nunito', sans-serif;
+
+// Montserrat
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+$montserrat: 'Montserrat', 'Roboto', sans-serif;
+
+// Roboto Slab
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+// font-family: 'Roboto Slab', serif;
+
+
+// main {
+//     a {
+//         text-decoration: underline;
+//     }
+//     a.button {
+//         text-decoration: none;
+//     }
+//     .button {
+//         text-decoration: none;
+//     }
+// }
+
+// Headings
+// --------
+
+h1, h3, h4, h5, h6 { font-family: 'Roboto Slab', serif; }
+h2 {
+   font-family: 'Roboto', sans-serif;
+   text-transform: uppercase;
+   font-weight: 700;
+   margin-top: .5em;
+}
+
+
+// Header
+//-------
+
+header {
+    background: $dark-gray;
+    h1 {
+        color: $white;
+    }
+}
+
+// Horizontal Nav Section
+//-----------------------
+
+.main-nav {
+    background: $dark-gray;
+    height: 4em;
+    line-height: 4em;
+    a {
+        color: $white;
+        font-weight: bold;
+    }
+}
+
+// Side Nav (localnav)
+//--------------------
+
+.side-nav {
+    background: $side-nav-bg;
+    border-bottom: .5em solid $medium-gray;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+    padding: 1em;
+    .localnav {
+        list-style: none;
+    }
+}
+
+
+// Main Content Area
+//------------------
+
+.main-content-area {
+    padding: 1em;
+}
+
+main {
+    margin-bottom: 25em;
+}
+
+
+// Footer
+//-------
+
+footer {
+    border-top: 1px solid $medium-gray;
+    background: $footer-bg;
+    padding: 1em;
+}
