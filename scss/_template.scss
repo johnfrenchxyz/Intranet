@@ -99,6 +99,14 @@ header {
     padding: 1em;
     .localnav {
         list-style: none;
+        @include breakpoint(small only) {
+            display: none;
+        }
+    }
+    #localNavToggle {
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -122,4 +130,18 @@ footer {
     border-top: 1px solid $medium-gray;
     background: $footer-bg;
     padding: 1em;
+}
+
+
+// Public Color
+//-------------
+.public {
+    background: $light-gray !important;
+    color: $dark-gray !important;
+    h1 {
+        color: $dark-gray;
+    }
+    a {
+        color: $dark-gray;
+    }
 }
