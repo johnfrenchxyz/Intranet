@@ -32,7 +32,7 @@
 //-------------
 
 p.instructions {
-    border: 1px solid $medium-gray;
+    border: 1px solid $medium-gray !important;
     padding: 1em;
     input[type=submit] {
         display: block;
