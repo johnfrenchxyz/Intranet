@@ -1,0 +1,42 @@
+/*
+    Old Template Overrides
+    CAES Intranet 2016
+*/
+
+// Status Bar
+//-----------
+
+#statusBar {
+    width: 100%;
+    background: $light-gray;
+    border: 1px solid $medium-gray;
+    padding: 1em;
+    font-size: .9rem;
+    margin-bottom: 1em;
+}
+
+// Headings
+//---------
+
+.main-content-area {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+
+// Instructions
+//-------------
+
+p.instructions {
+    border: 1px solid $medium-gray;
+    padding: 1em;
+    input[type=submit] {
+        display: block;
+        background: $red;
+        color: $white;
+    }
+}
