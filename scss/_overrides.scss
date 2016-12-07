@@ -46,7 +46,7 @@ p.instructions {
 // Submit Buttons
 //---------------
 
-input[type=submit] {
+input[type=submit], input[type=button] {
     display: block;
     background: $red;
     color: $white;
@@ -82,54 +82,86 @@ input[type=submit] {
 }
 
 
-// Personnel Investigator
-//-----------------------
 
-#caes-pi {
-    margin-bottom: 2em;
-}
 
-#non-caes-pi-table td {
-    padding-right: 10px;
-}
 
-span.radioStyle {
-    float: left;
-    clear: none;
-}
 
-.radioStyle label {
-    color: $red;
-    float: left;
-    clear: none;
-    padding: 5px;
-    border: #8e8e8e 1px solid;
-    margin-right: 5px;
-}
 
-.radioStyle label:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
 
-.radioStyle input {
-    float: left;
-    clear: none;
-}
 
-#caes-pi,
-#non-caes-pi {
-    clear: both;
-    background: $light-gray;
-    padding: 7px;
-    margin: 0;
-    position: relative;
-    top: -5px;
-    border: 1px solid $medium-gray;
-}
 
-label.selected-tab {
-    background: $light-gray;
-    margin-bottom: 0;
-    border: 1px solid $medium-gray;
-}
+
+
+
+
+
+
+// Possibly App-Specific Stuff
+//-----------------------------------------------------------------------------
+
+    // Add Non-CAES Collaborators Button
+    //----------------------------------
+
+    #add-non-caes {
+        display: block;
+        background: $red;
+        color: $white;
+        font-weight: bold;
+        padding: .5em;
+    }
+
+    // CAES Research Farm Project Database
+    //------------------------------------
+
+        // Personnel Investigator
+        //-----------------------
+
+        #caes-pi {
+            margin-bottom: 2em;
+        }
+
+        #non-caes-pi-table td {
+            padding-right: 10px;
+        }
+
+        span.radioStyle {
+            float: left;
+            clear: none;
+        }
+
+        .radioStyle label {
+            color: $red;
+            float: left;
+            clear: none;
+            padding: 5px;
+            border: #8e8e8e 1px solid;
+            margin-right: 5px;
+        }
+
+        .radioStyle label:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .radioStyle input {
+            float: left;
+            clear: none;
+        }
+
+        #caes-pi,
+        #non-caes-pi {
+            clear: both;
+            background: $light-gray;
+            padding: 7px;
+            margin: 0;
+            position: relative;
+            top: -5px;
+            border: 1px solid $medium-gray;
+        }
+
+        label.selected-tab {
+            background: $light-gray;
+            margin-bottom: 0;
+            border: 1px solid $medium-gray;
+            font-weight: bold;
+        }
