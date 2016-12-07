@@ -100,20 +100,27 @@ input[type=submit], input[type=button] {
 // Possibly App-Specific Stuff
 //-----------------------------------------------------------------------------
 
-    // Add Non-CAES Collaborators Button
-    //----------------------------------
-
-    #add-non-caes, #add-keywords {
-        display: block;
-        background: $light-gray;
-        color: $black;
-        font-weight: bold;
-        padding: .5em;
-        cursor: pointer;
-    }
-
     // CAES Research Farm Project Database
     //------------------------------------
+
+        // Funding Sources Box
+        //--------------------
+
+        .OITMultipleColumn {
+            padding: 1em;
+        }
+
+        // Add Non-CAES Collaborators Button
+        //----------------------------------
+
+        #add-non-caes, #add-keywords {
+            display: block;
+            background: $light-gray;
+            color: $black;
+            font-weight: bold;
+            padding: .5em;
+            cursor: pointer;
+        }
 
         // Personnel Investigator
         //-----------------------
