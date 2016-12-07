@@ -54,6 +54,7 @@ input[type=submit], input[type=button] {
     padding: 0.5em;
     font-size: 0.9rem;
     font-weight: bold;
+    margin-bottom: 1em;
 }
 
 
@@ -104,10 +105,11 @@ input[type=submit], input[type=button] {
 
     #add-non-caes {
         display: block;
-        background: $red;
-        color: $white;
+        background: $light-gray;
+        color: $black;
         font-weight: bold;
         padding: .5em;
+        cursor: pointer;
     }
 
     // CAES Research Farm Project Database
