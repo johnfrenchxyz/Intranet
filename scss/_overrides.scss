@@ -36,7 +36,7 @@
 //-------------
 
 p.instructions {
-    border: 1px solid $medium-gray !important;
+    border: 1px solid $medium-gray;
     padding: 1em;
     input[type=submit] {
         display: block;
@@ -54,28 +54,13 @@ p.instructions {
 //------------------
 
 .head {
-    background: $green !important;
+    background: $green;
     padding: .5em;
     color: $white;
     a {
         color: $white;
         font-family: 'Roboto', sans-serif;
         font-size: .9rem;
-    }
-}
-
-
-// Forms
-//------
-
-.formElement {
-    margin: 0 !important;
-}
-
-.main-content-area {
-    input[type=text] {
-        -webkit-box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1) !important;
-        box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1) !important;
     }
 }
 
