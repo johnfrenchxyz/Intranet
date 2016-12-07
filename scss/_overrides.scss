@@ -40,16 +40,20 @@
 p.instructions {
     border: 1px solid $medium-gray;
     padding: 1em;
+}
 
-    input[type=submit] {
-        display: block;
-        background: $red;
-        color: $white;
-        border: 0;
-        padding: 0.5em;
-        font-size: 0.9rem;
-        font-weight: bold;
-    }
+
+// Submit Buttons
+//---------------
+
+input[type=submit] {
+    display: block;
+    background: $red;
+    color: $white;
+    border: 0;
+    padding: 0.5em;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 
@@ -79,6 +83,10 @@ p.instructions {
 
 // Personnel Investigator
 //-----------------------
+
+#caes-pi {
+    margin-bottom: 2em;
+}
 
 #non-caes-pi-table td {
     padding-right: 10px;
