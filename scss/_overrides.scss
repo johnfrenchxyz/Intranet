@@ -2,7 +2,6 @@
     Old Template Overrides
     CAES Intranet 2016
 */
-
 // Status Bar
 //-----------
 
@@ -11,9 +10,10 @@
     background: $light-gray;
     border: 1px solid $medium-gray;
     padding: 1em;
-    font-size: .9rem;
-    margin: 1em 0 1em 0;
+    font-size: 0.9rem;
+    margin: 1em 0;
 }
+
 
 // Headings
 //---------
@@ -22,9 +22,11 @@
     h1 {
         font-size: 1.5rem;
     }
+
     h2 {
         font-size: 1.2rem;
     }
+
     h3 {
         font-size: 1.1rem;
         font-weight: bold;
@@ -38,13 +40,14 @@
 p.instructions {
     border: 1px solid $medium-gray;
     padding: 1em;
+
     input[type=submit] {
         display: block;
         background: $red;
         color: $white;
         border: 0;
-        padding: .5em;
-        font-size: .9rem;
+        padding: 0.5em;
+        font-size: 0.9rem;
         font-weight: bold;
     }
 }
@@ -55,12 +58,13 @@ p.instructions {
 
 .head {
     background: $green;
-    padding: .5em;
+    padding: 0.5em;
     color: $white;
+
     a {
         color: $white;
         font-family: 'Roboto', sans-serif;
-        font-size: .9rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -70,4 +74,53 @@ p.instructions {
 
 .rightAlign {
     float: right;
+}
+
+
+// Personnel Investigator
+//-----------------------
+
+#non-caes-pi-table td {
+    padding-right: 10px;
+}
+
+span.radioStyle {
+    float: left;
+    clear: none;
+}
+
+.radioStyle label {
+    color: $red;
+    float: left;
+    clear: none;
+    padding: 5px;
+    border: #8e8e8e 1px solid;
+    margin-right: 5px;
+}
+
+.radioStyle label:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.radioStyle input {
+    float: left;
+    clear: none;
+}
+
+#caes-pi,
+#non-caes-pi {
+    clear: both;
+    background: $light-gray;
+    padding: 7px;
+    margin: 0;
+    position: relative;
+    top: -5px;
+    border: 1px solid $medium-gray;
+}
+
+label.selected-tab {
+    background: $light-gray;
+    margin-bottom: 0;
+    border: 1px solid $medium-gray;
 }
