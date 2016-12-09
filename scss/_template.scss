@@ -59,8 +59,18 @@ h2 {
 
 header {
     background: $dark-gray;
-    h1 {
+    padding: 1em 0 1em 0;
+    // Intranet Title / Main Site Title
+    .site-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
         color: $white;
+        font-size: 3em;
+        line-height: 1;
+        // Font Reduction for Small Screens
+        @include breakpoint(small only) {
+            font-size: 2em;
+        }
     }
 }
 
@@ -133,7 +143,7 @@ footer {
 .public {
     background: $light-gray !important;
     color: $dark-gray !important;
-    h1 {
+    .site-title {
         color: $dark-gray;
     }
     a {
