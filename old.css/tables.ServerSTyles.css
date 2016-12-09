@@ -1,0 +1,81 @@
+table.OITTable
+{
+	width:auto;
+	padding:0px;
+	border-spacing:0px;
+	margin:0px;
+	border-collapse:collapse;
+}
+table.OITTable2
+{
+	padding:0px;
+	border-spacing:0px;
+	margin:0px;
+	border-collapse:collapse;
+}
+tr.OITTableHeader
+{
+	background: #dddddd;
+	font-weight:bold;
+	color: #000000;
+}
+tr.OITTableRow
+{
+	color: #000000;
+}
+tr.OITTableHighlightedRow
+{
+	background: #dddddd;
+}
+tr.OITTableOddRow
+{
+	background: #ffffff;
+}
+tr.OITTableEvenRow
+{
+	background: #eeeeee;
+}
+tr.OITTableFooter
+{
+	background: #dddddd;
+}
+/* cell styles for vertical table layout */
+th.OITTableHeaderCell
+{
+	background: #dddddd;
+	font-weight:bold;
+	color: #000000;
+}
+td.OITTableRowCell
+{
+	color: #000000;
+}
+td.OITTableHighlightedRowCell
+{
+	background: #dddddd;
+}
+td.OITTableOddRowCell
+{
+	background: #ffffff;
+}
+td.OITTableEvenRowCell
+{
+	background: #eeeeee;
+}
+td.OITTableFooterCell
+{
+	background: #dddddd;
+}
+
+td.helpCell {
+	border-left:#FFFFFF;
+	border-left:hidden;
+	width:auto;
+}
+
+table.fullWidth {
+	width:100% ! important;
+}
+td.additionalTopPadding {
+	padding-top:8px ! important;
+}

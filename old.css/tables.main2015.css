@@ -1,0 +1,80 @@
+/********************************************
+TABLE FORMATTING
+
+.horiz - table w/ horizontal lines, font size 100%
+.horiz2 - table w/ horizontal lines, font size 90%
+.horiz3 - table w/ horizontal lines, font size 80%
+
+.grid - table w/ grid lines, font size 100%
+.grid2 - table w/ grid lines, font size 90%
+.grid3 - table w/ grid lines, font size 80%
+
+********************************************/
+
+table.horiz, table.horiz2, table.horiz3 {
+	text-align:left;
+	color: #000000;
+	background: #ffffff;
+	width: 100%;
+	border-top: .0625rem solid #cccccc;
+	clear: right; /* modified 6-17-05, needs correction for normal table layout */
+}
+table.horiz tr td, table.horiz2 tr td, table.horiz3 tr td,
+table.horiz tr th, table.horiz2 tr th, table.horiz3 tr th {
+	padding: .1875rem;
+	border-bottom: .0625rem solid #cccccc;
+}
+table.horiz p, table.horiz2 p, table.horiz3 p {
+	margin: 0;
+	padding: .625rem;
+}
+table.grid, table.grid2, table.grid3, table.grid4 {
+	text-align:left;
+	color: #000000;
+	background: #ffffff;
+	width: 100%;
+	border-left: .0625rem solid #cccccc;
+	border-top: .0625rem solid #cccccc;
+	clear: right; /* modified 6-17-05, needs correction for normal table layout */
+}
+table.grid tr td, table.grid2 tr td, table.grid3 tr td, table.grid4 tr td,
+table.grid tr th, table.grid2 tr th, table.grid3 tr th, table.grid4 tr th {
+	padding: .1875rem;
+	padding-top: .0625rem;
+	padding-bottom: .0625rem;
+	border-right: .0625rem solid #cccccc;
+	border-bottom: .0625rem solid #cccccc;
+}
+table.grid p, table.grid2 p, table.grid3 p, table.grid4 p {
+	margin: 0;
+}
+/** table font sizing **/
+table.horiz, table.grid {
+	font-size: .75rem;
+}
+table.horiz2, table.grid2 {
+	font-size: .675rem;
+}
+table.horiz3, table.grid3 {
+	font-size: .6rem;
+}
+table.horiz4, table.grid4 {
+	font-size: .6375rem;
+}
+/** table headings **/
+tr.head {
+	background: #eeeeee;
+	font-weight:bold;
+	color: #000000;
+}
+tr.head a {
+	text-decoration: none;
+	color: #ba0c2f;
+}
+tr.head a:hover { /* month and today format */
+	text-decoration: underline;
+}
+tr.highlight {
+	background-color: #FFFFCC;
+	background-color: #FFFDEB;
+}
