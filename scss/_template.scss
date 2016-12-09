@@ -97,13 +97,57 @@ header {
 //--------------------
 
 .side-nav {
-    background: $side-nav-bg;
-    border-bottom: .5em solid $medium-gray;
+    background: $white;
+    border-left: 1px solid $medium-gray;
+    border-right: 1px solid $medium-gray;
+    border-bottom: 1px solid $medium-gray;
     border-bottom-left-radius: .5em;
     border-bottom-right-radius: .5em;
-    padding: 1em;
     .localnav {
         list-style: none;
+        margin: 0;
+        padding: 0 0 1em 0;
+        // Top Level Menu Items
+        li {
+            border-bottom: 1px solid $medium-gray;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        // Top Level Menu Item Links
+        li a {
+            display: block;
+            padding: 1em;
+            line-height: 1;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $dark-gray;
+            font-size: 1rem;
+            width: 100%;
+            transition: 200ms background;
+            &:hover, &:focus {
+                background: $light-gray;
+            }
+            &:active {
+                background: $medium-gray;
+            }
+        }
+        // Second Level Menu Items
+        ul li {
+            list-style: none;
+            border-bottom: none;
+            border-left: 2px solid $medium-gray;
+        }
+        // Second Level Menu Item Links
+        ul li a {
+            text-transform: none;
+        }
+        // Active Class To Show Current Location
+        .active {
+            background: $light-gray;
+        }
+        // Hide For Small Screens
         @include breakpoint(small only) {
             display: none;
         }
@@ -112,6 +156,12 @@ header {
         display: block;
         width: 100%;
         text-align: center;
+        padding: 1em;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $dark-gray;
+        font-size: 1rem;
     }
 }
 
