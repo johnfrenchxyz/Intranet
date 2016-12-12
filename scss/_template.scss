@@ -60,6 +60,11 @@ h2 {
 header {
     background: $dark-gray;
     padding: 1em 0 1em 0;
+    // CAES Branding & Logos
+    .caes-branding {
+        max-width: 270px;
+        width: 100%;
+    }
     // Intranet/Apss Tagline
     .site-tagline {
         text-transform: uppercase;
