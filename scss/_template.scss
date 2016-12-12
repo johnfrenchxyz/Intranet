@@ -164,20 +164,46 @@ header {
             margin-top: 0em !important;
         }
     }
-    #localNavToggle {
-        background: $white;
-        display: block;
-        width: 100%;
-        height: 2em;
-        text-align: center;
-        border-bottom: 1px solid $medium-gray;
+}
+
+// Mobile Navigation Toggle Button
+//--------------------------------
+
+.mobile-nav-container {
+    background:pink;
+    z-index: -10;
+    position: relative;
+}
+
+// Button Toggle
+#localNavToggle {
+    background: $side-nav-bg;
+    margin: 0;
+    width: 100%;
+    display: block;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    float: left;
+    position: relative;
+    z-index: 0;
+    // Link Text
+    span {
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         text-transform: uppercase;
         color: $dark-gray;
     }
+    // Arrow Image (#arrowToggle)
+    img {
+        width: 30px;
+        height: 30px;
+        float: right;
+        position: relative;
+        z-index: 10;
+        margin-top: .6em;
+    }
 }
-
 
 // Main Content Area
 //------------------
