@@ -60,16 +60,27 @@ h2 {
 header {
     background: $dark-gray;
     padding: 1em 0 1em 0;
-    // Intranet Title / Main Site Title
+    // Intranet/Apss Tagline
+    .site-tagline {
+        text-transform: uppercase;
+        display: block;
+        color: $white;
+        // Font Reduction for Small Screens
+        @include breakpoint(small only) {
+            font-size: .8rem;
+        }
+    }
+    // App Title
     .site-title {
+        display: block;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         color: $white;
-        font-size: 3em;
-        line-height: 1;
+        font-size: 2em;
+        line-height: 1em;
         // Font Reduction for Small Screens
         @include breakpoint(small only) {
-            font-size: 2em;
+            font-size: 1.5em;
         }
     }
 }
@@ -97,13 +108,13 @@ header {
 //--------------------
 
 .side-nav {
-    margin-top: 2em;
     background: $white;
     border-top: 1px solid $light-gray;
     // border-left: 1px solid $medium-gray;
     // border-right: 1px solid $medium-gray;
     // border-bottom: 1px solid $medium-gray;
     .localnav {
+        margin-top: 2em !important;
         list-style: none;
         margin: 0;
         padding: 0 0 1em 0;
@@ -154,18 +165,20 @@ header {
         // Hide For Small Screens
         @include breakpoint(small only) {
             display: none;
+            margin-top: 0em !important;
         }
     }
     #localNavToggle {
+        background: $white;
         display: block;
         width: 100%;
+        height: 2em;
         text-align: center;
-        padding: 1em;
+        border-bottom: 1px solid $medium-gray;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         text-transform: uppercase;
         color: $dark-gray;
-        font-size: 1rem;
     }
 }
 
@@ -198,7 +211,7 @@ footer {
 .public {
     background: $light-gray !important;
     color: $dark-gray !important;
-    .site-title {
+    .site-title, .site-tagline {
         color: $dark-gray;
     }
     a {
