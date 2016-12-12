@@ -94,6 +94,55 @@ input[type=submit], input[type=button] {
     line-height: 1.14rem;
 }
 
+h3 .plain, h2 .plain, h4 .plain {
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+.smallerText {
+    font-size: 0.63rem;
+    line-height: 0.95rem;
+    margin: 0;
+}
+
+.quicklinks {
+    border: .0877em solid #eeeeee;
+    border-right: .0877em solid #cccccc;
+    border-bottom: .0877em solid #999999;
+    padding: .877em;
+}
+
+.rightContent {
+    float: right;
+    margin-left: 0.93rem;
+    margin-bottom: 0.62rem;
+    font-size: 0.71rem;
+    line-height: 1.14rem;
+    width: 30%;
+}
+
+
+.formStyle .buttons input, p.button a, input.buttons {
+    border: 0;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-size: 0.93rem;
+    font-weight: bold;
+    padding: .46875rem .703125rem;
+    -moz-border-radius: .46875rem .46875rem .46875rem .46875rem;
+    -webkit-border-top-left-radius: 0.46rem;
+    -webkit-border-top-right-radius: 0.46rem;
+    -webkit-border-bottom-left-radius: 0.46rem;
+    -webkit-border-bottom-right-radius: 0.46rem;
+    text-decoration: none;
+}
+
+.formStyle .buttons .submit, p.button a, input.buttons {
+    background: #7fc140 url(../images/bottom-shadow.png) repeat-x bottom;
+    color: #fff;
+}
+
+
+
 
 
 
