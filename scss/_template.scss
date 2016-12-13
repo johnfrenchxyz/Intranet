@@ -152,6 +152,14 @@ header {
                 border-bottom: none;
             }
         }
+        // Override for status bar
+        #statusBar a {
+            border-bottom: none;
+            font-weight: normal;
+            padding: none;
+            display: inline;
+            width: auto;
+        }
         // Second Level Menu
         li ul {
             margin: 0;
