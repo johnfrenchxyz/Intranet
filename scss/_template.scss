@@ -258,6 +258,11 @@ header {
         margin: 0 !important;
         border-right: 1px solid $medium-gray;
         border-left: 1px solid $medium-gray;
+        // Hide For Small Screens
+        @include breakpoint(small only) {
+            display: block !important;
+            margin-top: 0em !important;
+        }
     }
 }
 

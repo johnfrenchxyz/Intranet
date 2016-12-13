@@ -44,5 +44,5 @@ $(window).on('resize', function() {
     // Close Collapsed Nav on Resize
     $('.collapsed-nav').css('display', 'none');
     // Return the Arrow to the 'Up' State
-    // (This is accomplished with the Mobile Nav's Function)
+    $('#arrowToggle').attr('src', 'images/down-arrow.png');
 });
