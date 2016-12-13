@@ -114,12 +114,8 @@ h3 .plain, h2 .plain, h4 .plain {
 }
 
 .quicklinks {
-    // border: .0877em solid #eeeeee;
-    // border-right: .0877em solid #cccccc;
-    // border-bottom: .0877em solid #999999;
-    // padding: .877em;
     border: 1px solid $medium-gray;
-    background: $white;
+    background: $white !important;
     padding: 1em;
     .title {
         font-size: 1rem;
