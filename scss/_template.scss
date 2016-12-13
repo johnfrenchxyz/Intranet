@@ -166,6 +166,13 @@ header {
             padding: 0;
             border-bottom: 1px solid $light-gray;
         }
+        // Third Level Menu Items
+        li ul li ul li {
+        }
+        // Third Level Menu Item Links
+        li ul li ul li a {
+            padding-left: 2.5em !important;
+        }
         // Hide For Small Screens
         @include breakpoint(small only) {
             display: none;
