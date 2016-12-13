@@ -164,14 +164,16 @@ h3 .plain, h2 .plain, h4 .plain {
 // }
 
 .breadcrumbs {
-    font-size: 0.9em;
+    color: $red;
     margin: 0;
-    color: #ba0c2f;
-    letter-spacing: 0.03rem;
-    font-weight: normal;
-    text-decoration: none !important;
-    color: $red !important;
-    &:hover {
+    a {
+        font-size: 0.9em;
+        letter-spacing: 0.03rem;
+        font-weight: normal;
+        text-decoration: none !important;
+        color: $red !important;
+    }
+    a:hover {
         text-decoration: underline !important;
     }
 }
