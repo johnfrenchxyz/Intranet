@@ -164,6 +164,11 @@ h3 .plain, h2 .plain, h4 .plain {
 .breadcrumbs {
     color: $red;
     margin: 0;
+    font-size: 0.9em;
+    letter-spacing: 0.03rem;
+    font-weight: normal;
+    text-decoration: none !important;
+    color: $red !important;
     a {
         font-size: 0.9em;
         letter-spacing: 0.03rem;
