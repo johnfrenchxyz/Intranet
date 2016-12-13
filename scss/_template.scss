@@ -67,6 +67,9 @@ header {
     .caes-branding {
         max-width: 270px;
         width: 100%;
+        @include breakpoint(small only) {
+            display: none;
+        }
     }
     // Intranet/Apss Tagline
     .site-tagline {
