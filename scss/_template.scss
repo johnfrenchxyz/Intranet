@@ -191,7 +191,7 @@ header {
 }
 
 // Button Toggle
-#localNavToggle {
+#mobileNavToggle {
     background: $side-nav-bg;
     margin: 0;
     width: 100%;
@@ -220,6 +220,47 @@ header {
         margin-top: .6em;
     }
 }
+
+
+// Collapsed Navigation
+//---------------------
+// This is used when the template is full width and the sidebar is hidden
+
+// Collapsed Nav Containing Div
+.collapsed-nav-container {
+    width: 100%;
+    background: $side-nav-bg;
+    border-bottom: solid 1px $medium-gray;
+}
+
+// Button That Toggles the Collapsed Nav
+#collapsedNavToggle {
+    @extend #mobileNavToggle;
+    transition: 180ms ease background;
+    color: $white;
+    background: darken($side-nav-bg, 5%);
+    border-left: 1px solid $medium-gray;
+    border-right: 1px solid $medium-gray;
+    &:hover {
+        background: darken($side-nav-bg, 10%);
+        cursor: pointer;
+    }
+}
+
+// Collapsed Nav
+.collapsed-nav {
+    display: none;
+    @extend .side-nav;
+    .localnav {
+        @extend .localnav;
+        text-align: left;
+        margin: 0 !important;
+        border-right: 1px solid $medium-gray;
+        border-left: 1px solid $medium-gray;
+    }
+}
+
+
 
 // Main Content Area
 //------------------
