@@ -94,6 +94,14 @@ input[type=submit], input[type=button] {
     line-height: 1.14rem;
 }
 
+.twoColumn1, .twoColumn2 {
+    width: 50%;
+}
+
+.threeColumn1, .threeColumn2, .threeColumn3 {
+    width: 33%;
+}
+
 h3 .plain, h2 .plain, h4 .plain {
     font-weight: normal;
     font-size: 0.9em;
