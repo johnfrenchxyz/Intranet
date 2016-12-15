@@ -211,6 +211,19 @@ h3 .plain, h2 .plain, h4 .plain {
 // Possibly App-Specific Stuff
 //-----------------------------------------------------------------------------
 
+    // CAES Calendar Event Entry
+    //--------------------------
+
+    .input-group-label {
+        padding: 0;
+        width: auto;
+        .fi-calendar-image {
+            width: 2em;
+        }
+    }
+
+
+
     // CAES Research Farm Project Database
     //------------------------------------
 
