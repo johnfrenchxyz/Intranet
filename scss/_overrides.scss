@@ -84,6 +84,21 @@ input[type=submit], input[type=button] {
 }
 
 
+// Width: Auto Class
+//------------------
+
+.width-auto {
+    width: auto;
+}
+
+// Display: Inline Class
+//----------------------
+
+.display-inline {
+    display: inline;
+}
+
+
 // Old Template CSS
 //-----------------
 
@@ -144,25 +159,6 @@ h3 .plain, h2 .plain, h4 .plain {
     width: 30%;
 }
 
-
-// .formStyle .buttons input, p.button a, input.buttons {
-//     border: 0;
-//     font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
-//     font-size: 0.93rem;
-//     font-weight: bold;
-//     padding: .46875rem .703125rem;
-//     -moz-border-radius: .46875rem .46875rem .46875rem .46875rem;
-//     -webkit-border-top-left-radius: 0.46rem;
-//     -webkit-border-top-right-radius: 0.46rem;
-//     -webkit-border-bottom-left-radius: 0.46rem;
-//     -webkit-border-bottom-right-radius: 0.46rem;
-//     text-decoration: none;
-// }
-
-// .formStyle .buttons .submit, p.button a, input.buttons {
-//     background: #7fc140 url(../images/bottom-shadow.png) repeat-x bottom;
-//     color: #fff;
-// }
 
 .breadcrumbs {
     color: $red;
