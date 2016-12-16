@@ -118,6 +118,15 @@ label {
     text-decoration: none !important;
     font-weight: bold;
 }
+
+p.button {
+    color: $white;
+    a {
+        text-decoration: none; 
+    }
+}
+
+
 // Old Template CSS
 //-----------------
 
