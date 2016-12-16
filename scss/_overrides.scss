@@ -12,17 +12,17 @@
     padding: 1em;
     font-size: 0.9rem;
     margin: 1em 0;
+
     p {
         margin-bottom: 0;
     }
 }
-
-
 // Headings
 //---------
 
 .main-content-area {
-    margin-top: .1em;
+    margin-top: 0.1em;
+
     h1 {
         font-size: 1.5rem;
     }
@@ -36,8 +36,6 @@
         font-weight: bold;
     }
 }
-
-
 // Instructions
 //-------------
 
@@ -45,12 +43,11 @@ p.instructions {
     border: 1px solid $medium-gray;
     padding: 1em;
 }
-
-
 // Submit Buttons
 //---------------
 
-input[type=submit], input[type=button] {
+input[type=button],
+input[type=submit] {
     // display: block;
     background: $red;
     color: $white;
@@ -60,13 +57,11 @@ input[type=submit], input[type=button] {
     font-weight: bold;
     margin-bottom: 1em;
 }
-
-
 // Head (h3) Section
 //------------------
 
 .head {
-    margin: 1em 0 1em 0;
+    margin: 1em 0;
     background: $green;
     padding: 0.5em;
     color: $white;
@@ -77,85 +72,85 @@ input[type=submit], input[type=button] {
         font-size: 0.9rem;
     }
 }
-
-
 // Alignment Classes
 //------------------
 
 .rightAlign {
     float: right;
 }
-
-
 // Width: Auto Class
 //------------------
 
 .width-auto {
     width: auto;
 }
-
 // Display: Inline Class
 //----------------------
 
 .display-inline {
     display: inline;
 }
-
-
 // Label Padding For Forms
 //------------------------
 
 label {
     padding: 0.3em;
 }
-
-
 // System/Error Message
 //---------------------
 
-.systemMessage, .errorMessage {
+.errorMessage,
+.systemMessage {
     background: $red;
     color: $white;
-    padding: .5em;
+    padding: 0.5em;
     font-weight: bold;
+
     ul {
         list-style: none;
         margin: 0;
     }
 }
-
 // Anchor Link Buttons
 //--------------------
+
 .button {
     text-decoration: none !important;
     font-weight: bold;
 }
-
-
 // Old Template CSS
 //-----------------
 
-.twoColumn1, .twoColumn2, .threeColumn1, .threeColumn2, .threeColumn3 {
+.threeColumn1,
+.threeColumn2,
+.threeColumn3,
+.twoColumn1,
+.twoColumn2 {
     float: left;
     margin-bottom: 0.62rem;
     font-size: 0.9rem;
     line-height: 1.14rem;
 }
 
-.twoColumn1, .twoColumn2 {
+.twoColumn1,
+.twoColumn2 {
     width: 50%;
-    padding: .5em;
+    padding: 0.5em;
     @include breakpoint(medium down) {
         width: 100%;
     }
 }
 
-.threeColumn1, .threeColumn2, .threeColumn3 {
+.threeColumn1,
+.threeColumn2,
+.threeColumn3 {
     width: 33%;
-    padding: .5em;
+    padding: 0.5em;
 }
 
-h3 .plain, h2 .plain, h4 .plain {
+h2 .plain,
+h3 .plain,
+h4 .plain {
     font-weight: normal;
     font-size: 0.9em;
 }
@@ -170,15 +165,18 @@ h3 .plain, h2 .plain, h4 .plain {
     border: 1px solid $medium-gray;
     background: $white !important;
     padding: 1em;
+
     .title {
         font-size: 1rem;
         font-weight: bold;
     }
+
     ul li {
         list-style: none;
+
         a {
             color: $red;
-            font-size: .9rem;
+            font-size: 0.9rem;
         }
     }
 }
@@ -192,7 +190,6 @@ h3 .plain, h2 .plain, h4 .plain {
     width: 30%;
 }
 
-
 .breadcrumbs {
     color: $red;
     margin: 0;
@@ -201,11 +198,13 @@ h3 .plain, h2 .plain, h4 .plain {
     font-weight: normal;
     text-decoration: none !important;
     color: $red !important;
+
     a {
         font-weight: normal;
         text-decoration: none !important;
         color: $red !important;
     }
+
     a:hover {
         text-decoration: underline !important;
     }
@@ -228,118 +227,110 @@ h3 .plain, h2 .plain, h4 .plain {
 }
 
 .clear {
-    clear:both;
+    clear: both;
 }
 
-h2.line, h3.line, h4.line {
-    border-bottom:1px solid #f0f0f0;
+h2.line,
+h3.line,
+h4.line {
+    border-bottom: 1px solid #f0f0f0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Input Margins that Ben suggested
+[type='color'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='email'],
+[type='month'],
+[type='number'],
+[type='password'],
+[type='search'],
+[type='tel'],
+[type='text'],
+[type='time'],
+[type='url'],
+[type='week'],
+textarea {
+    margin: .5em 0 .5em 0;
+}
 // Possibly App-Specific Stuff
 //-----------------------------------------------------------------------------
+// CAES Calendar Event Entry
+//--------------------------
+.input-group-label {
+    padding: 0;
+    width: auto;
 
-    // CAES Calendar Event Entry
-    //--------------------------
-
-    .input-group-label {
-        padding: 0;
-        width: auto;
-        .fi-calendar-image {
-            width: 2em;
-        }
+    .fi-calendar-image {
+        width: 2em;
     }
+}
+// CAES Research Farm Project Database
+//------------------------------------
+// Funding Sources Box
+//--------------------
+.OITMultipleColumn {
+    padding: 0 1em;
+}
+// Add Non-CAES Collaborators Button
+//----------------------------------
+#add-keywords,
+#add-non-caes {
+    display: block;
+    background: $light-gray;
+    color: $black;
+    font-weight: bold;
+    padding: 0.5em;
+    cursor: pointer;
+}
+// Personnel Investigator
+//-----------------------
+#caes-pi {
+    margin-bottom: 2em;
+}
 
+#non-caes-pi-table td {
+    padding-right: 10px;
+}
 
+span.radioStyle {
+    float: left;
+    clear: none;
+}
 
-    // CAES Research Farm Project Database
-    //------------------------------------
+.radioStyle label {
+    color: $red;
+    float: left;
+    clear: none;
+    padding: 5px;
+    border: #8e8e8e 1px solid;
+    margin-right: 5px;
+}
 
-        // Funding Sources Box
-        //--------------------
+.radioStyle label:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
 
-        .OITMultipleColumn {
-            padding: 0 1em 0 1em;
-        }
+.radioStyle input {
+    float: left;
+    clear: none;
+}
 
-        // Add Non-CAES Collaborators Button
-        //----------------------------------
+#caes-pi,
+#non-caes-pi {
+    clear: both;
+    background: $light-gray;
+    padding: 7px;
+    margin: 0;
+    position: relative;
+    top: -5px;
+    border: 1px solid $medium-gray;
+}
 
-        #add-non-caes, #add-keywords {
-            display: block;
-            background: $light-gray;
-            color: $black;
-            font-weight: bold;
-            padding: .5em;
-            cursor: pointer;
-        }
-
-        // Personnel Investigator
-        //-----------------------
-
-        #caes-pi {
-            margin-bottom: 2em;
-        }
-
-        #non-caes-pi-table td {
-            padding-right: 10px;
-        }
-
-        span.radioStyle {
-            float: left;
-            clear: none;
-        }
-
-        .radioStyle label {
-            color: $red;
-            float: left;
-            clear: none;
-            padding: 5px;
-            border: #8e8e8e 1px solid;
-            margin-right: 5px;
-        }
-
-        .radioStyle label:hover {
-            text-decoration: underline;
-            cursor: pointer;
-        }
-
-        .radioStyle input {
-            float: left;
-            clear: none;
-        }
-
-        #caes-pi,
-        #non-caes-pi {
-            clear: both;
-            background: $light-gray;
-            padding: 7px;
-            margin: 0;
-            position: relative;
-            top: -5px;
-            border: 1px solid $medium-gray;
-        }
-
-        label.selected-tab {
-            background: $light-gray;
-            margin-bottom: 0;
-            border: 1px solid $medium-gray;
-            font-weight: bold;
-        }
+label.selected-tab {
+    background: $light-gray;
+    margin-bottom: 0;
+    border: 1px solid $medium-gray;
+    font-weight: bold;
+}
