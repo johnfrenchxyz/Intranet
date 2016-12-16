@@ -193,6 +193,19 @@ header {
             padding: 0;
             border-bottom: 1px solid $light-gray;
         }
+        // Secon Level Menu Item (Non Links)
+        li ul li span {
+            padding: .5em 1em .5em 1em !important;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+            border-bottom: 1px solid $light-gray;
+            display: block;
+            width: 100%;
+            &:after {
+                content: ':';
+            }
+        }
         // Third Level Menu Items
         li ul li ul li {
         }
