@@ -110,6 +110,20 @@ label {
 }
 
 
+// System/Error Message
+//---------------------
+
+.systemMessage, .errorMessage {
+    background: $red;
+    color: $white;
+    padding: .5em;
+    ul {
+        list-style: none;
+        margin: 0;
+    }
+}
+
+
 // Old Template CSS
 //-----------------
 
