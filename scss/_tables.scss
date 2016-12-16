@@ -17,6 +17,10 @@ TABLE FORMATTING
 
 ********************************************/
 
+table {
+	margin-bottom: 2em;
+}
+
 table.horiz, table.horiz2, table.horiz3 {
 	text-align:left;
 	color: #000000;
@@ -25,6 +29,7 @@ table.horiz, table.horiz2, table.horiz3 {
 	border-top: .0625rem solid #cccccc;
 	clear: right; /* modified 6-17-05, needs correction for normal table layout */
 	font-size: .9rem;
+	margin-bottom: 2em;
 }
 table.horiz tr td, table.horiz2 tr td, table.horiz3 tr td,
 table.horiz tr th, table.horiz2 tr th, table.horiz3 tr th {
