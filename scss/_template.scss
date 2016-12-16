@@ -63,12 +63,19 @@ h3 {
 header {
     background: $dark-gray;
     padding: 1em 0 1em 0;
+    // Padding For Small Screens
+    @include breakpoint(small only) {
+        padding: 0 0 1em 0;
+    }
     // CAES Branding & Logos
     .caes-branding {
         max-width: 270px;
         width: 100%;
+        // Image Positioning For Small Screens
         @include breakpoint(small only) {
-            display: none;
+            max-width: 225px;
+            display: block;
+            margin: 0 auto 0 auto;
         }
     }
     // Intranet/Apss Tagline
@@ -77,9 +84,13 @@ header {
         text-transform: uppercase;
         display: block;
         color: $white;
+        // Font Reduction for Medium Screens
+        @include breakpoint(medium only) {
+            font-size: .9rem;
+        }
         // Font Reduction for Small Screens
         @include breakpoint(small only) {
-            font-size: .8rem;
+            font-size: .7rem;
         }
     }
     // App Title
@@ -91,8 +102,12 @@ header {
         font-size: 2em;
         line-height: 1em;
         // Font Reduction for Small Screens
-        @include breakpoint(small only) {
+        @include breakpoint(medium only) {
             font-size: 1.5em;
+        }
+        // Font Reduction for Small Screens
+        @include breakpoint(small only) {
+            font-size: 1.2em;
         }
     }
 }
