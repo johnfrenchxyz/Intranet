@@ -122,7 +122,8 @@ label {
 p.button {
     color: $white;
     a {
-        text-decoration: none; 
+        text-decoration: none;
+        color: $white;
     }
 }
 
@@ -259,8 +260,9 @@ h4.line {
 [type='time'],
 [type='url'],
 [type='week'],
+select,
 textarea {
-    margin: .5em 0 .5em 0;
+    margin: .5em 0 .5em 0 !important;
 }
 // Possibly App-Specific Stuff
 //-----------------------------------------------------------------------------
