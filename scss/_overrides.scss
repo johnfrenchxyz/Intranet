@@ -47,7 +47,8 @@ p.instructions {
 //---------------
 
 input[type=button],
-input[type=submit] {
+input[type=submit],
+input[type=reset] {
     // display: block;
     background: $red;
     color: $white;
