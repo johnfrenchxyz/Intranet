@@ -50,6 +50,20 @@ $(window).on('resize', function() {
 
 // Alert Bar
 //----------
+
+// Set the Cookie and Check for Existence
+function dismissBar() {
+    if (document.cookie.replace(/(?:(?:^|.*;\s*)doSomethingOnlyOnce\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
+        document.cookie = "doSomethingOnlyOnce=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+    } else {
+        $('.alert-bar, .alert-bar-close').hide();
+    }
+}
+// Run the cookie function
+dismissBar();
+
+// Dismiss Button Action
 $('.alert-bar-close').on('click', function(){
+    dismissBar();
     $('.alert-bar, .alert-bar-close').fadeOut('fast');
 });
