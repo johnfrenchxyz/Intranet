@@ -46,3 +46,10 @@ $(window).on('resize', function() {
     // Return the Arrow to the 'Up' State
     $('#arrowToggle').attr('src', 'images/down-arrow.png');
 });
+
+
+// Alert Bar
+//----------
+$('.alert-bar-close').on('click', function(){
+    $('.alert-bar, .alert-bar-close').fadeOut('fast');
+});
