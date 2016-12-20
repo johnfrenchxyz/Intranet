@@ -153,6 +153,10 @@ p.button {
     }
 }
 
+.twoColumn label, .threeColumn label {
+    display: inline
+}
+
 .threeColumn1,
 .threeColumn2,
 .threeColumn3 {
