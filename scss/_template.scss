@@ -355,6 +355,9 @@ footer {
     color: $white;
     padding: 1em 1em .5em 1em;
     margin: 0;
+    a {
+        color: $white;
+    }
 }
 
 a.alert-bar-close {
