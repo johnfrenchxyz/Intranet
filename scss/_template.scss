@@ -346,3 +346,32 @@ footer {
         color: $dark-gray;
     }
 }
+
+
+// Alert Bar
+//----------
+.alert-bar {
+    background: $red;
+    color: $white;
+    padding: 1em 1em .5em 1em;
+    margin: 0;
+}
+
+a.alert-bar-close {
+    background: $red;
+    color: $white;
+    margin-bottom: 1em;
+    width: 100%;
+    display: block;
+    padding: 1em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-decoration: none;
+    font-size: .9rem;
+    transition: 180ms ease background;
+    &:hover {
+        color: $white;
+        background: darken($red, 10%);
+    }
+}
