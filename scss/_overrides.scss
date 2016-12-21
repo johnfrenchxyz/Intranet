@@ -143,6 +143,9 @@ p.button {
     margin-bottom: 0.62rem;
     font-size: 0.9rem;
     line-height: 1.14rem;
+    label {
+        display: inline;
+    }
 }
 
 .twoColumn1,
@@ -154,7 +157,7 @@ p.button {
     }
 }
 
-.twoColumn label, .threeColumn label {
+.twoColumn label, .threeColumn label, .twoColumn1 label, .twoColumn2 label, .threeColumn1 label {
     display: inline
 }
 
