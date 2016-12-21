@@ -55,7 +55,7 @@ $(window).on('resize', function() {
 // Check for the Cookie
 function dismissBar() {
     // If this cookie does not exist on the user's computer, show the alert-bar
-    if (document.cookie.replace(/(?:(?:^|.*;\s*)doSomethingOnlyOnce\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
+    if (document.cookie.replace(/(?:(?:^|.*;\s*)appsUpdateAlertMessage\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
         $('.alert-bar, .alert-bar-close').css('display', 'block');
         $('.alert-bar, .alert-bar-close').fadeIn('fast');
     }
@@ -66,6 +66,6 @@ dismissBar();
 
 // Dismiss Button Action
 $('.alert-bar-close').on('click', function(){
-    document.cookie = "doSomethingOnlyOnce=true; expires=Fri, 31 Dec 9999 23:59:59 GMT;";
+    document.cookie = "appsUpdateAlertMessage=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
     $('.alert-bar, .alert-bar-close').fadeOut('fast');
 });
