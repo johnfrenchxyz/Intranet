@@ -355,17 +355,20 @@ footer {
     color: $white;
     padding: 1em 1em .5em 1em;
     margin: 0;
+    // Hidden By Default:
+    display: none;
     a {
         color: $white;
     }
 }
 
 a.alert-bar-close {
+    // Hidden By Default
+    display: none;
     background: $red;
     color: $white;
     margin-bottom: 1em;
     width: 100%;
-    display: block;
     padding: 1em;
     font-weight: bold;
     text-align: center;

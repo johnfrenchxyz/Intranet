@@ -51,19 +51,21 @@ $(window).on('resize', function() {
 // Alert Bar
 //----------
 
-// Set the Cookie and Check for Existence
+// Alert Bar is Hidden in CSS by Default
+// Check for the Cookie
 function dismissBar() {
+    // If this cookie does not exist on the user's computer, show the alert-bar
     if (document.cookie.replace(/(?:(?:^|.*;\s*)doSomethingOnlyOnce\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
-        document.cookie = "doSomethingOnlyOnce=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-    } else {
-        $('.alert-bar, .alert-bar-close').hide();
+        $('.alert-bar, .alert-bar-close').css('display', 'block');
+        $('.alert-bar, .alert-bar-close').fadeIn('fast');
     }
 }
+
 // Run the cookie function
 dismissBar();
 
 // Dismiss Button Action
 $('.alert-bar-close').on('click', function(){
-    dismissBar();
+    document.cookie = "doSomethingOnlyOnce=true; expires=Fri, 31 Dec 9999 23:59:59 GMT;";
     $('.alert-bar, .alert-bar-close').fadeOut('fast');
 });
