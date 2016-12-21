@@ -1,0 +1,16 @@
+/*
+    CAES Apps & Intranet Print Styles
+*/
+
+@media print {
+	header,
+	nav,
+	.side-nav,
+	#mobileNavToggle,
+	.alert-bar,
+	.alert-bar-close,
+	footer {
+		display: none !important;
+	}
+
+}
