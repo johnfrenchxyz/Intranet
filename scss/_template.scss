@@ -170,6 +170,11 @@ header {
                 border-bottom: none;
             }
         }
+        // Override for ".here" Style
+        .here {
+            background: $light-gray;
+            font-weight: bold;
+        }
         // Override for status bar
         #statusBar a {
             border-bottom: none;
