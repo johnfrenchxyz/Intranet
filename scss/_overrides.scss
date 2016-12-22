@@ -131,7 +131,7 @@ label {
 p.button {
     color: $white;
     a {
-        text-decoration: none;
+        text-decoration: none !important;
         color: $white;
     }
 }
