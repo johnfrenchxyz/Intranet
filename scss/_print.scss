@@ -1,19 +1,28 @@
 /*
     CAES Apps & Intranet Print Styles
 */
-
 @media print {
-	header,
-	nav,
-	.side-nav,
 	#mobileNavToggle,
 	.alert-bar,
 	.alert-bar-close,
-	footer {
+	.side-nav,
+	footer,
+	header,
+	nav {
 		display: none !important;
 	}
-	body, main {
+
+	body,
+	main {
 		width: 100%;
 	}
 
+	table,
+	td,
+	th {
+		border-collapse: collapse;
+		border: 1px solid black;
+		width: 100%;
+		text-align: right;
+	}
 }
