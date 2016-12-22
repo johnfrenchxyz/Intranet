@@ -61,8 +61,16 @@ function dismissBar() {
     }
 }
 
-// Run the cookie function
-dismissBar();
+// Run the cookie function before end date
+var alertCurrentDate = new Date();
+var alertEndDate = new Date('2017-03-01T18:17:49.254Z');
+if ( alertCurrentDate < alertEndDate ) {
+    dismissBar();
+    console.log('alert will run')
+} else {
+    console.log('alert has expired');
+}
+
 
 // Dismiss Button Action
 $('.alert-bar-close').on('click', function(){
