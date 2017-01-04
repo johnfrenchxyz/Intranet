@@ -8,6 +8,8 @@
 	.side-nav,
 	footer,
 	header,
+	a[href="#top"],
+	.helpButton,
 	nav {
 		display: none !important;
 	}
